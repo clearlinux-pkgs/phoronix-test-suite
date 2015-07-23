@@ -1,0 +1,26 @@
+From 59df57babf9486ec0ec579a4f4e7defd5c39656e Mon Sep 17 00:00:00 2001
+From: Ikey Doherty <michael.i.doherty@intel.com>
+Date: Thu, 23 Jul 2015 17:07:39 +0100
+Subject: [PATCH] Add Makefile
+
+Signed-off-by: Ikey Doherty <michael.i.doherty@intel.com>
+---
+ Makefile | 6 ++++++
+ 1 file changed, 6 insertions(+)
+ create mode 100644 Makefile
+
+diff --git a/Makefile b/Makefile
+new file mode 100644
+index 0000000..97d69e7
+--- /dev/null
++++ b/Makefile
+@@ -0,0 +1,6 @@
++all:
++
++.PHONY: all
++
++install:
++	DESTDIR=$(DESTDIR) bash ./install-sh /usr
+-- 
+1.9.1
+
