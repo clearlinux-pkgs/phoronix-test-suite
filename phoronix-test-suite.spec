@@ -4,7 +4,7 @@
 #
 Name     : phoronix-test-suite
 Version  : 6.2.2
-Release  : 8
+Release  : 9
 URL      : http://www.phoronix.net/downloads/phoronix-test-suite/releases/phoronix-test-suite-6.2.2.tar.gz
 Source0  : http://www.phoronix.net/downloads/phoronix-test-suite/releases/phoronix-test-suite-6.2.2.tar.gz
 Summary  : No detailed summary available
