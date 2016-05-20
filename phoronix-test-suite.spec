@@ -4,7 +4,7 @@
 #
 Name     : phoronix-test-suite
 Version  : 6.2.2
-Release  : 9
+Release  : 10
 URL      : http://www.phoronix.net/downloads/phoronix-test-suite/releases/phoronix-test-suite-6.2.2.tar.gz
 Source0  : http://www.phoronix.net/downloads/phoronix-test-suite/releases/phoronix-test-suite-6.2.2.tar.gz
 Summary  : No detailed summary available
@@ -15,6 +15,7 @@ Requires: phoronix-test-suite-config
 Requires: phoronix-test-suite-data
 Requires: phoronix-test-suite-doc
 Patch1: 0001-Add-Makefile.patch
+Patch2: 0002-watchdog-New-PTS-module.patch
 
 %description
 # Phoronix Test Suite 6.2.2
@@ -62,8 +63,10 @@ doc components for the phoronix-test-suite package.
 
 
 %prep
+cd ..
 %setup -q -n phoronix-test-suite
 %patch1 -p1
+%patch2 -p1
 
 %build
 make V=1  %{?_smp_mflags}
@@ -281,6 +284,7 @@ rm -rf %{buildroot}
 /usr/share/phoronix-test-suite/pts-core/modules/timed_screenshot.php
 /usr/share/phoronix-test-suite/pts-core/modules/toggle_screensaver.php
 /usr/share/phoronix-test-suite/pts-core/modules/update_checker.php
+/usr/share/phoronix-test-suite/pts-core/modules/watchdog.php
 /usr/share/phoronix-test-suite/pts-core/objects/FPDF.php
 /usr/share/phoronix-test-suite/pts-core/objects/client/display_modes/pts_basic_display_mode.php
 /usr/share/phoronix-test-suite/pts-core/objects/client/display_modes/pts_concise_display_mode.php
