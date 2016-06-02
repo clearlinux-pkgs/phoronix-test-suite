@@ -1,5 +1,66 @@
 PHORONIX TEST SUITE CHANGE-LOG
 
+Phoronix Test Suite 6.4.0-Hasvik
+2 June 2016
+
+[Only minor changes since 6.4 M4]
+
+Phoronix Test Suite 6.4.0 Milestone 4
+31 May 2016
+
+- pts-core: Automatically add used extra OpenBenchmarking.org repositories to the linked list
+- pts-core: Don't load empty tests on finish-run command
+- pts-core: Add perl-digest-md5 to external dependencies list
+- pts-core: Prevent duplicate tests/setting combinations from entering the same test run manager queue
+- pts-core: Fix for IE not scaling SVGs in the results viewer
+- pts-core: Finish new pts_test_suite API, port build-suite to it
+- phoromatic: Support editing and deleting tests in local suites from the Phoromatic Server UI
+- phodevi: More detection improvements for NVMe devices on Linux
+
+Phoronix Test Suite 6.4.0 Milestone 3
+26 May 2016
+
+- pts-core: XML formatting fix for non-OpenBenchmarking.org deployments
+- pts-core: Do more to avoid zombie processes in stress-run manager
+- pts-core: More robustness of the results parser with spaces (or lack of) near colons
+- pts-core: Rewritten pts_test_suite internals
+- phodevi: Support for reading AMDGPU OverDrive overclock offset
+- phoromatic: Add generalized "Testing" page to Phoromatic Server
+- watchdog: new PTS module for checking sensor readings to suspend/quit testing if exceeded
+
+Phoronix Test Suite 6.4.0 Milestone 2
+6 May 2016
+
+- pts-core: Allow XML formatting from the Phoromatic Server web interface
+- pts-core: Reformat stress-run log messages
+- pts-core: Add "redis-server" as a potential external dependency for providing Redis
+- pts-core: Statically set dynamic_run_count_on_length_or_less to 60
+- pts-core: Adaptively increase regression threshold level in points_of_possible_interest() when too many results are being flagged
+- phoromatic: Fix selecting the same test itself on the "build suite" page
+- phoromatic: Do hard deletes when deleting results from admin area or results page
+- phoromatic: Add basic support for deleting "local suites" from Phoromatic web UI
+- phoromatic: Allow exporting system test run/build errors to the exported public results viewer
+- phoromatic: Add PTS_NO_REBOOT_ON_NETWORK_FAILURE environment variable for clients where if network failure occurs, Phoromatic clients will not reboot
+- phodevi: Add ambient.temp sensor for reporting ambient temperature, currently supports temperv14 USB sensors
+
+Phoronix Test Suite 6.4.0 Milestone 1
+25 April 2016
+
+- pts-core: Many improvements to stress-run functionality
+- pts-core: Add Midori to supported browser list
+- pts-core: Add default logging support while running stress-run using phoronix-test-suite-stress.log filename
+- pts-core: Additional fallback for locating if running PTS as a user from their home directory
+- pts-core: Append date to phoronix-test-suite-stress-XXX.log when running stress-run
+- phoromatic: Initial server-side implementation of new stress-run support via Phoromatic Server when going to "Run A Benchmark" and opting for stress mode
+- phoromatic: Initial client-side implementation of new stress-run support
+- phoromatic: Add basic email notification support to the Phoromatic export results viewer
+- phoromatic: Say "Stress Testing - XXX" as Phoromatic status messages when in stress-run mode
+- phoromatic: Add links to schedules/tickets from dashboard and system pages for active schedule/ticket on that system at the moment
+- phoromatic: Fix for handling post-run event script
+- phoromatic: Only run tests once each time called upon in stress-run mode
+- phoromatic: Show systems in groups on benchmark ticketing page
+- phoromatic: Don't reset fields when building suite and adding additional tests
+
 Phoronix Test Suite 6.2.2
 9 March 2016
 
