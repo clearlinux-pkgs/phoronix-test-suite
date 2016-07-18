@@ -1,0 +1,25 @@
+From 506d650e9e88ef7313775e3eb254dbc740d5095e Mon Sep 17 00:00:00 2001
+From: Michael Larabel <Michael@phoronix.com>
+Date: Mon, 18 Jul 2016 12:12:27 -0500
+Subject: [PATCH] pts-core: Use identifier rather than test title on CSV output
+
+---
+ pts-core/objects/pts_result_file_output.php | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/pts-core/objects/pts_result_file_output.php b/pts-core/objects/pts_result_file_output.php
+index e07dee5..a550753 100644
+--- a/pts-core/objects/pts_result_file_output.php
++++ b/pts-core/objects/pts_result_file_output.php
+@@ -107,7 +107,7 @@ class pts_result_file_output
+ 			}
+ 			else
+ 			{
+-				$csv_output .= '"' . $result_object->test_profile->get_title() . ' - ' . $result_object->get_arguments_description() . '"';
++				$csv_output .= '"' . $result_object->test_profile->get_identifier() . ' - ' . $result_object->get_arguments_description() . '"';
+ 			}
+ 
+ 			foreach($columns as $column)
+-- 
+2.7.4 (Apple Git-66)
+
