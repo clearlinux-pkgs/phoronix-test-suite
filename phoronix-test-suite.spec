@@ -4,7 +4,7 @@
 #
 Name     : phoronix-test-suite
 Version  : 6.4.0
-Release  : 11
+Release  : 12
 URL      : http://www.phoronix.net/downloads/phoronix-test-suite/releases/phoronix-test-suite-6.4.0.tar.gz
 Source0  : http://www.phoronix.net/downloads/phoronix-test-suite/releases/phoronix-test-suite-6.4.0.tar.gz
 Summary  : No detailed summary available
@@ -15,6 +15,7 @@ Requires: phoronix-test-suite-config
 Requires: phoronix-test-suite-data
 Requires: phoronix-test-suite-doc
 Patch1: 0001-Add-Makefile.patch
+Patch2: 0001-pts-core-Use-identifier-rather-than-test-title-on-CS.patch
 
 %description
 # Phoronix Test Suite 6.4.0
@@ -64,8 +65,10 @@ doc components for the phoronix-test-suite package.
 %prep
 %setup -q -n phoronix-test-suite
 %patch1 -p1
+%patch2 -p1
 
 %build
+export LANG=C
 make V=1  %{?_smp_mflags}
 
 %install
