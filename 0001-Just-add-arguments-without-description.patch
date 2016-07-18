@@ -1,0 +1,26 @@
+From a56e5fb118d10a124c3183526d891a9a108fb393 Mon Sep 17 00:00:00 2001
+From: VictorRodriguez <vm.rod25@gmail.com>
+Date: Mon, 18 Jul 2016 18:07:58 -0500
+Subject: [PATCH] Just add arguments without description
+
+Signed-off-by: VictorRodriguez <vm.rod25@gmail.com>
+---
+ pts-core/objects/pts_result_file_output.php | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/pts-core/objects/pts_result_file_output.php b/pts-core/objects/pts_result_file_output.php
+index a550753..a0de285 100644
+--- a/pts-core/objects/pts_result_file_output.php
++++ b/pts-core/objects/pts_result_file_output.php
+@@ -107,7 +107,7 @@ class pts_result_file_output
+ 			}
+ 			else
+ 			{
+-				$csv_output .= '"' . $result_object->test_profile->get_identifier() . ' - ' . $result_object->get_arguments_description() . '"';
++				$csv_output .= '"' . $result_object->test_profile->get_identifier() . ' - ' . $result_object->get_arguments() . '"';
+ 			}
+ 
+ 			foreach($columns as $column)
+-- 
+2.7.4 (Apple Git-66)
+
