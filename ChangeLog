@@ -1,5 +1,41 @@
 PHORONIX TEST SUITE CHANGE-LOG
 
+Phoronix Test Suite 6.6.0-Loppa
+
+- pts_Graph: On multi-way comparisons, always condense line graphs to modified box plots
+
+Phoronix Test Suite 6.6.0 Milestone 3
+26 August 2016
+
+- pts-core: Add OpenMandriva/urpmi PHP dependency helper to launcher
+- pts-core: After running tests, if no browser/display is available, offer to show results via CLI graph/text rendering
+- pts-core: Add a SVG DOM HTML back-end for lowering common SVG into pure HTML for cases like email clients where no SVG is supported
+- html_results_export: New module exposed via EXPORT_RESULTS_HTML_EMAIL_TO and EXPORT_RESULTS_HTML_FILE_TO env vars for exporting HTML results
+- pts_Graph: When highlighting graph values, darken the color rather than use static color
+
+Phoronix Test Suite 6.6.0 Milestone 2
+7 August 2016
+
+- deploy: Update Debian packaging script
+- pts-core: Fix for upload-test-suite (on OpenBenchmarking.org side too)
+- pts-core: Show local suites in list-suites
+- pts-core: Ensure DragonFlyBSD pkg installation is done automatically
+- pts-core: Restructure bash on windows check
+- pts-core: Initial work on CLI terminal colored text output
+- phoromatic: Web UI styling improvements
+- phodevi: Show mdstat RAID Details when available
+- pts_Graph: Show extra disk details on system graph
+
+Phoronix Test Suite 6.6.0 Milestone 1
+6 July 2016
+
+- pts-core: Add OpenCV to external dependencies list
+- pts-core: Disable test cache share when run in stress-run mode
+- phoromatic: Allow custom versions to be manually specified on test suite web UI page
+- pts_Graph: Show min/max results on multi-way comparisons
+- pts_Graph: Color string tweaks
+- phodevi: Fix to allow GPU temperature sensor to work with AMDGPU-PRO driver stack
+
 Phoronix Test Suite 6.4.0-Hasvik
 2 June 2016
 
