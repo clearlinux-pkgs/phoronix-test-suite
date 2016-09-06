@@ -4,7 +4,7 @@
 #
 Name     : phoronix-test-suite
 Version  : 6.6.0
-Release  : 16
+Release  : 17
 URL      : http://www.phoronix.net/downloads/phoronix-test-suite/releases/phoronix-test-suite-6.6.0.tar.gz
 Source0  : http://www.phoronix.net/downloads/phoronix-test-suite/releases/phoronix-test-suite-6.6.0.tar.gz
 Summary  : No detailed summary available
