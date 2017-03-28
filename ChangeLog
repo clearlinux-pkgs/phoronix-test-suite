@@ -1,5 +1,16 @@
 PHORONIX TEST SUITE CHANGE-LOG
 
+Phoronix Test Suite 7.0.1
+28 March 2017
+
+pts-core: Support for network proxies with username/password requirement
+pts-core: Improve formatting of text in 'info' sub-command
+phodevi: Improved detection for Quill AArch64 board and possibly other boards
+phodevi: Various sensor detection improvements for the Jetson TX2
+phodevi: Add fallback detection for ARM Mali
+report_test_run_times: Add INSTALL_TIMES_ARE_A_BENCHMARK=1 option for generating install time graphs
+report_test_run_times: Add INSTALL_SIZES_ARE_A_BENCHMARK=1 option for generating install size graphs
+
 Phoronix Test Suite 7.0.0-Ringsaker
 6 March 2017
 
