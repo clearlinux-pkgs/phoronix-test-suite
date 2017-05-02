@@ -4,7 +4,7 @@
 #
 Name     : phoronix-test-suite
 Version  : 7.0.1
-Release  : 21
+Release  : 22
 URL      : http://www.phoronix.net/downloads/phoronix-test-suite/releases/phoronix-test-suite-7.0.1.tar.gz
 Source0  : http://www.phoronix.net/downloads/phoronix-test-suite/releases/phoronix-test-suite-7.0.1.tar.gz
 Summary  : No detailed summary available
