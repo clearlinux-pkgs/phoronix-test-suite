@@ -1,5 +1,52 @@
 PHORONIX TEST SUITE CHANGE-LOG
 
+Phoronix Test Suite 7.2.0-Trysil
+8 June 2017
+
+pts-core: Add TurnCharsToSpace support to result parser
+pts_Graph: Fix multi-way comparison detection
+
+Phoronix Test Suite 7.2.0 Milestone 4
+3 June 2017
+
+pts-core: If a OB upload fails with system logs, try again without system logs
+pts-core: Add basic dump-tests-to-git sub-command
+pts-core: Add basic dump-suites-to-git sub-command
+pts-core: Result parser fixes/improvements
+pts-core: Additional safety checks around loading test result arguments from a result file
+pts-core: Add "vulkan-development" external dependency
+pts_Graph: Few tweaks/clean-ups
+pts_Graph: Allow optionally specifying custom colors via the GRAPH_HIGHLIGHT environment variable
+phoromatic: Introduce support for setting a run-priority on test schedules
+
+Phoronix Test Suite 7.2.0 Milestone 3
+26 May 2017
+
+pts-core: Result parser fixes for some advanced corner cases
+pts-core: Add dump-file-info helper
+phodevi: Fallback for being able to read I/O scheduler on NVMe device on Linux
+phodevi: Monitor *DEBUG* environment variables
+pts_Graph: Key alignment spacing fix
+pts_Graph: Don't allow duplicate identifiers
+pts_Graph: Various other alignment tweaks
+phoromatic: Handling for non-PCNTL support in Phoromatic client
+
+Phoronix Test Suite 7.2.0 Milestone 2
+4 May 2017
+
+pts-core: Add SKIP_TESTS_HAVING_ARGS environment variable
+pts-core: Parser improvements
+perf_per_dollar: Allow custom units, report on LIB graphs too
+phodevi: Add PGI compiler detection
+
+Phoronix Test Suite 7.2.0 Milestone 1
+14 April 2017
+
+pts-core: Result parser improvements
+pts-core: Add AppendToArgumentsDescription option to result parser capabilities
+system_monitor: Fix for when individual monitoring is disabled
+phodevi: Fix for listing dual 4K displays and other select multi-monitor configurations
+
 Phoronix Test Suite 7.0.1
 28 March 2017
 
