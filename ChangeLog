@@ -1,5 +1,17 @@
 PHORONIX TEST SUITE CHANGE-LOG
 
+Phoronix Test Suite 7.4.0 Milestone 1
+31 July 2017
+
+pts-core: Don't show PTS version when there is no sub-title, just leave it empty
+pts-core: Add phoronix-test-suite unload-module sub-command
+pts-core: Add phoronix-test-suite auto-load-module sub-command
+pts-core: Drop juju scripts as appears unmaintained, happy to re-add if maintained
+pts-core: Allow showing existing results from a result file in-progress on test runs
+pts_Graph: Color tweaking
+phodevi: Clear up extra potential fluff in the GPU model string
+perf_tips: New module to indicate various performance tips to users
+
 Phoronix Test Suite 7.2.1-Trysil
 30 June 2017
 
