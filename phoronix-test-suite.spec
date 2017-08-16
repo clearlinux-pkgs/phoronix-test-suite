@@ -4,9 +4,9 @@
 #
 Name     : phoronix-test-suite
 Version  : 1
-Release  : 25
-URL      : http://www.phoronix-test-suite.com/releases/development/phoronix-test-suite-7.4.0m1.tar.gz
-Source0  : http://www.phoronix-test-suite.com/releases/development/phoronix-test-suite-7.4.0m1.tar.gz
+Release  : 26
+URL      : http://www.phoronix-test-suite.com/releases/development/phoronix-test-suite-7.4.0m2.tar.gz
+Source0  : http://www.phoronix-test-suite.com/releases/development/phoronix-test-suite-7.4.0m2.tar.gz
 Summary  : No detailed summary available
 Group    : Development/Tools
 License  : GPL-3.0
@@ -17,7 +17,7 @@ Requires: phoronix-test-suite-doc
 Patch1: 0001-Add-Makefile.patch
 
 %description
-# Phoronix Test Suite 7.4.0m1
+# Phoronix Test Suite 7.4.0m2
 http://www.phoronix-test-suite.com/
 The **Phoronix Test Suite** is the most comprehensive testing and benchmarking
 platform available for Linux, Solaris, OS X, and BSD operating systems. The
@@ -70,11 +70,11 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1501951780
+export SOURCE_DATE_EPOCH=1502851382
 make V=1  %{?_smp_mflags}
 
 %install
-export SOURCE_DATE_EPOCH=1501951780
+export SOURCE_DATE_EPOCH=1502851382
 rm -rf %{buildroot}
 %make_install
 
