@@ -1,0 +1,11 @@
+--- /tmp/pts-core/modules/watchdog.php	2017-09-06 13:17:38.422982600 -0700
++++ phoronix-test-suite/pts-core/modules/watchdog.php	2017-09-06 13:17:48.644807647 -0700
+@@ -124,7 +124,7 @@ class watchdog extends pts_module_interf
+ 			{
+ 				echo PHP_EOL . PHP_EOL . 'WATCHDOG: ' . strtoupper(phodevi::sensor_object_name($sensor)) . ' EXCEEDED THRESHOLD: ' . $val . ' ' . strtoupper(phodevi::read_sensor_object_unit($sensor)) . PHP_EOL;
+ 
+-				$minutes_to_wait = 3;
++				$minutes_to_wait = 10;
+ 				$freq_to_poll = 5;
+ 				echo 'SUSPENDING TESTING; WILL WAIT UP TO ' . $minutes_to_wait . ' MINUTES TO SEE IF VALUE LOWERED. ' . PHP_EOL . PHP_EOL;
+ 				for($i = 0; $i < ($minutes_to_wait * 60); $i += $freq_to_poll)

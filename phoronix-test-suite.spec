@@ -4,7 +4,7 @@
 #
 Name     : phoronix-test-suite
 Version  : 1
-Release  : 27
+Release  : 28
 URL      : http://www.phoronix-test-suite.com/releases/development/phoronix-test-suite-7.4.0m3.tar.gz
 Source0  : http://www.phoronix-test-suite.com/releases/development/phoronix-test-suite-7.4.0m3.tar.gz
 Summary  : No detailed summary available
@@ -15,6 +15,7 @@ Requires: phoronix-test-suite-config
 Requires: phoronix-test-suite-data
 Requires: phoronix-test-suite-doc
 Patch1: 0001-Add-Makefile.patch
+Patch2: longer-watchdog-timeout.patch
 
 %description
 # Phoronix Test Suite 7.4.0m3
@@ -64,17 +65,18 @@ doc components for the phoronix-test-suite package.
 %prep
 %setup -q -n phoronix-test-suite
 %patch1 -p1
+%patch2 -p1
 
 %build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1503973504
+export SOURCE_DATE_EPOCH=1504729445
 make V=1  %{?_smp_mflags}
 
 %install
-export SOURCE_DATE_EPOCH=1503973504
+export SOURCE_DATE_EPOCH=1504729445
 rm -rf %{buildroot}
 %make_install
 
