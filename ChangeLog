@@ -1,5 +1,62 @@
 PHORONIX TEST SUITE CHANGE-LOG
 
+Phoronix Test Suite 7.6.0-Alvdal
+7 December 2017
+
+pts-core: Just minor changes
+
+Phoronix Test Suite 7.6.0 Milestone 4
+3 December 2017
+
+pts-core: Gentoo external dependency handling updates
+pts-core: Better external dependency handling when running on EC2 instances
+phodevi: Add new gpu.memory-usage sensor initially supported on NVIDIA
+
+Phoronix Test Suite 7.6.0 Milestone 3
+21 November 2017
+
+pts-core: Provide some basic graph size/count reporting on refresh-graphs sub-command
+pts-core: make script shebang more portable
+pts-core: Various styling updates
+pts-core: More demanding debug-self-test
+pts-core: Update Fedora's Python packages
+pts_Graph: Turn line graphs to horizontal box plots if too much data to graph in space
+phodevi: physical CPU core detection count on macOS
+phodevi: GPU power consumption sensor support via nvidia-smi
+phodevi: NVMe drive temperature reporting on Linux
+phodevi: Better memory model detection on Linux
+
+Phoronix Test Suite 7.6.0 Milestone 2
+2 November 2017
+
+pts-core: Add LEDE external dependency handling support
+pts-core: Drop ports-based external dependency handling for FreeBSD and instead encourage pkg
+pts-core: Network MAC address detection on OpenBSD
+phoronix-test-suite: Check for php-cli as binary option
+phodevi: Motherboard detection support on BSD using smbios.planar.product
+phodevi: hw.cpu_topology_core_ids support for physical core count on BSD
+phodevi: Allow BSD GPU detection via pciconf data
+phodevi: BSD chipset detection
+phodevi: VT EFIFB resolution detection
+
+Phoronix Test Suite 7.6.0 Milestone 1
+10 October 2017
+
+pts-core: Add external dependency handling for MidnightBSD / mport
+pts-core: Improved handling of IP/MAC detection to try to figure out the default interface
+pts-core: Wake-On-LAN handling detection improvements
+phoromatic: Try using systemctl poweroff first when trying to turn off a system
+phodevi: Add memory.temp sensor
+phodevi: Fixed k10temp CPU temperature reporting
+phodevi: Add IPMI ambient temperature support
+phodevi: Some CPU/GPU temperature reporting improvements
+phodevi: Ignore reporting 'MS-DOS FAT32' EFI file-system on macOS
+phodevi: Add Bcache reporting support
+phodevi: Add APFS Apple File-System detection on macOS
+phodevi: Tweaks for macOS High Sierra
+phodevi: Restructure CPU core/thread reporting in system tables
+perf_per_dollar: Add "phoronix-test-suite perf_per_dollar.add <result file>" to allow perf-per-dollar graphs to be added after the fact
+
 Phoronix Test Suite 7.4.0-Tynset
 19 September 2017
 
