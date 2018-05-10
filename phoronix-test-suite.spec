@@ -4,7 +4,7 @@
 #
 Name     : phoronix-test-suite
 Version  : 7.8.0
-Release  : 33
+Release  : 34
 URL      : https://www.phoronix.net/downloads/phoronix-test-suite/releases/phoronix-test-suite-7.8.0.tar.gz
 Source0  : https://www.phoronix.net/downloads/phoronix-test-suite/releases/phoronix-test-suite-7.8.0.tar.gz
 Summary  : No detailed summary available
