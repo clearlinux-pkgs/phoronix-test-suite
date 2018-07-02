@@ -1,5 +1,77 @@
 PHORONIX TEST SUITE CHANGE-LOG
 
+Phoronix Test Suite 8.0.1-Aremark
+26 June 2018
+
+pts-core: Add "wine" external dependency support
+pts-core: Fix skip-test behavior
+pts-core: Web browser handling improvements on Windows, other Windows updates
+phoromatic: Various minor fixes and enhancements
+phodevi: Add USE_WINE environment variable check, point it towards the wine binary you wish to test
+
+Phoronix Test Suite 8.0.0-Aremark
+5 June 2018
+
+pts-core: Various macOS support tweaks/improvements
+pts-core: Add external dependency support for Brew macOS package manager
+pts-core: Avoid duplicate test identifiers on graphs
+phodevi: Improved X.Org Server version detection
+
+Phoronix Test Suite 8.0.0 Milestone 5
+30 May 2018
+
+pts-core: Termux external dependency support
+pts-core: Other minor tweaks and changes
+phoromatic: Better handling when the Phoromatic Server is run without an Internet connection or Internet disabled
+phoromatic: A wide variety of other Phoromatic Server optimizations and improvements
+phodevi: Add spec_store_bypass / Spectre Variant 4 reporting
+
+Phoronix Test Suite 8.0.0 Milestone 4
+16 May 2018
+
+phoromatic: Add a "email all users" option to the rootadmin page
+phoromatic: Improve search functionality on results page, allow boolean expressions, date ranges, many other search features
+phoromatic: Various search improvements to `phoronix-test-suite search`
+phoromatic: Allow new test profiles to be created from Phoromatic web UI
+pts-core: New create-test-profile sub-command for guided process to test profile creation
+pts-core: Basic changes, should be all that's needed for EU GDPR safeguards
+phodevi: RISC-V SiFive CPU detection
+
+Phoronix Test Suite 8.0.0 Milestone 3
+16 April 2018
+
+pts-core: Improvements for BSD / FreeBSD support
+pts-core: Add "V8" external dependency for V8 JavaScript engine
+pts-core: Add initial AdvertiseServiceOpenBenchmarkRelay support
+pts-core: Add new inspect-test-profile sub-command
+pts-core: Add ColoredConsole option in user configuration file of AUTO / TRUE / FALSE to control colored text behavior
+pts-core: Report each test's run-time to test-rin-times in result file XML
+pts-core: More XSD / OpenBenchmarking.org schema handling work for future functionality
+phoromatic: Ensure environment variables set via Phoromatic web interface get passed to tests
+phodevi: BSD improvements
+backup: A module providing initial backup/restore functionality for PTS/Phoromatic
+
+Phoronix Test Suite 8.0.0 Milestone 2
+24 March 2018
+
+pts-core: Add DeleteOutputBefore and DeleteOutputAfter options to the result parser
+pts-core: Fix for run-random-tests sub-command
+pts-core: Native XML result parsing support via FileFormat = XML in the result parser for test profiles
+pts-core: Add openbenchmarking-uploads sub-command for reporting recent result uploads from the local IP
+phodevi: reboot/shutdown support on Windows
+
+Phoronix Test Suite 8.0.0 Milestone 1
+8 March 2018
+
+pts-core: Rewritten Windows support
+pts-core: Add ~/install-message support where if a test profile installer writes there, that message will in turn be shown to the user on test install
+pts-core: Support for using Cygwin's bash interpreter on Windows systems for better test profile parsing support
+pts-core: When running on Windows, add new "windows/" OpenBenchmarking.org test repository
+pts-core: Introduce basic phoronix-test-suite shell for easier PTS experience
+pts-core: Allow XInclude support for test suites
+perf_per_dollar: Allow calculating cloud costs / perf-per via COST_PERF_PER_HOUR= environment variable
+phodevi: Cavium ThunderX detection
+
 Phoronix Test Suite 7.8.0-Folldal
 14 February 2018
 

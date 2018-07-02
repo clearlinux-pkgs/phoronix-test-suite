@@ -1,5 +1,5 @@
 PKG_NAME := phoronix-test-suite
-URL = https://www.phoronix.net/downloads/phoronix-test-suite/releases/phoronix-test-suite-7.8.0.tar.gz
+URL = https://github.com/phoronix-test-suite/phoronix-test-suite/archive/v8.0.1.tar.gz
 ARCHIVES = 
 
 include ../common/Makefile.common
