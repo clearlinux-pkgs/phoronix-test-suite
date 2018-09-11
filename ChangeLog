@@ -1,5 +1,68 @@
 PHORONIX TEST SUITE CHANGE-LOG
 
+Phoronix Test Suite 8.2.0-Rakkestad
+11 September 2018
+
+pts-core: Add RequiresDisplay test profile property to indicate if the test profile explicitly requires a monitor / display server to work
+pts-core: Add RequiresNetwork test profile property to indicate if the test profile needs a working network connection
+pts-core: Add RequiresInternet test profile property to indicate if the test profile needs a working Internet connection
+pts-core: Don't install tests where the current run-time checks will fail
+phodevi: Improve CPU thread count detection when running under LXC
+phodevi: More robust DMI decode ignore value handling
+phodevi: Add extra fallback detection for LXC in system-layer
+
+Phoronix Test Suite 8.2.0 Milestone 4
+7 September 2018
+
+pts-core: Fix behavior of "Would you like to stop and install these tests now"
+pts-core: Add reinstall / re-install aliases to force-install
+ob_auto_compare: Default first to trying to do an automated local result comparison
+phodevi: Amlogic SoC detection based on meson_cpufreq driver
+phodevi: Rockchip SoC fallback detection
+phodevi: Embedded ARM Cortex / ARM part model detection
+phodevi: Expanded sensor coverage using Intel RAPL
+
+Phoronix Test Suite 8.2.0 Milestone 3
+22 August 2018
+
+pts-core: Minor updates to logic for determining how many times to dynamically increase run count on high variance results
+pts-core: Show deprecated tests too when running list-all-tests
+pts-core: Add DropNoisyResults option if wishing to not save results that have too high of deviation between runs
+pts-core: Add PTS_DOWNLOAD_CACHE_OVERRIDE environment variable option on make-download-cache
+pts-core: Add PTS_USER_PATH_OVERRIDE environment variable to override PTS_USER_PATH on initialization
+pts-core: Add PTS_DOWNLOAD_CACHING_PLATFORM_LIMIT environment variable for make-download-cache
+pts-core: Add list-cached-tests option
+
+Phoronix Test Suite 8.2.0 Milestone 2
+15 August 2018
+
+pts-core: Add DivideResultDivisor to result parser
+pts-core: Add libevent as possible external dependency
+pts-core: Alert the user when the test install directory is on a file-system mounted with 'noexec'
+pts-core: Optional support with PHP 7.3+ to also obtain network info using net_get_interfaces()
+pts-core: Fix possible alignment issue with value/spacer on outputting text-based result graphs
+pts-core: When Internet is not available and running list-tests, only show tests that are available via caches unless `list-all-tests` is run
+pts-core: Rework `list-recommended-tests` to make use of download count information exposed via OB index repository data rather than needing to make fresh web query
+pts-core: Show "popular tests" in the invalid command helper
+pts-core: Allow stress-run to be triggered from interactive mode
+pts-core: Allow comparing dynamic in-line result comparisons against local results when no Internet results matching or Internet not available
+phodevi: Reporting of L1TF / Level 1 Terminal Fault vulnerability
+pts_Graph: Tweaks to text sizing on vertical bar graphs
+
+Phoronix Test Suite 8.2.0 Milestone 1
+21 July 2018
+
+pts-core: Add readline-based autocompletion support for text-based menu selection lists
+pts-core: Add readline-based autocompletion support for the result file save name for trying to match existing result file identifiers
+pts-core: Add autocompletion support for result file identifier based on installed software/hardware
+pts-core: Various Alpine Linux external dependency updates
+pts-core: Various improvements to the Shell sub-command functionality, including auto-completion support
+phoromatic: From rootadmin allow the rootadmin to override/reset a user account password
+phodevi: Windows battery reporting discharge rate support
+phodevi: Improved multi CPU socket reporting on Windows
+phodevi: Various hardware/software detection improvements when running within Docker/containers
+pgo: New module to provide for automated compiler PGO (Profile Guided Optimizations) testing on GCC/Clang
+
 Phoronix Test Suite 8.0.1-Aremark
 26 June 2018
 
