@@ -4,7 +4,7 @@
 #
 Name     : phoronix-test-suite
 Version  : 8.4.0
-Release  : 41
+Release  : 42
 URL      : https://github.com/phoronix-test-suite/phoronix-test-suite/archive/v8.4.0.tar.gz
 Source0  : https://github.com/phoronix-test-suite/phoronix-test-suite/archive/v8.4.0.tar.gz
 Summary  : No detailed summary available
@@ -92,11 +92,12 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1543322402
+export SOURCE_DATE_EPOCH=1543349084
 make  %{?_smp_mflags}
 
+
 %install
-export SOURCE_DATE_EPOCH=1543322402
+export SOURCE_DATE_EPOCH=1543349084
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/phoronix-test-suite
 cp COPYING %{buildroot}/usr/share/package-licenses/phoronix-test-suite/COPYING
@@ -116,7 +117,7 @@ cp COPYING %{buildroot}/usr/share/package-licenses/phoronix-test-suite/COPYING
 /usr/share/applications/phoronix-test-suite.desktop
 /usr/share/icons/hicolor/48x48/apps/phoronix-test-suite.png
 /usr/share/icons/hicolor/64x64/mimetypes/application-x-openbenchmarking.png
-/usr/share/mime/packages/openbenchmarking-mime.xml
+/usr/share/mime-packages/openbenchmarking-mime.xml
 /usr/share/phoronix-test-suite/deploy/deb-package/build-package-deb.php
 /usr/share/phoronix-test-suite/deploy/deployments.md
 /usr/share/phoronix-test-suite/deploy/farm-system-customizations/intel-xorg-headless.conf
