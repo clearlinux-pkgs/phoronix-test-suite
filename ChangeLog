@@ -1,5 +1,50 @@
 PHORONIX TEST SUITE CHANGE-LOG
 
+Phoronix Test Suite 8.6.0-Spydeberg
+5 February 2019
+
+pts-core: Other small tweaks and fixes
+pts-core: Fix for "/installed" virtual suite not including the proprietary/commercial tests that are installed
+ob_auto_compare: Allow showing more results in the embedded percentile graphs
+
+Phoronix Test Suite 8.6.0 Milestone 3
+27 January 2019
+
+pts-core: Better handling on Windows when there are space(s) in the paths
+pts-core: Add __event_post_run_stats module hook
+pts-core: Inline display of result distributions from OpenBenchmarking.org on applicable results
+pts-core: Don't try to run tests from result file(s) or suite(s) that were not installed
+pts-core: More accurate time reporting when result files are passed to `phoronix-test-suite estimate-run-time`
+phodevi: Better reporting of NVMe drive strings on BSDs
+
+Phoronix Test Suite 8.6.0 Milestone 2
+19 January 2019
+
+pts-core: Update Mac OS X to macOS references
+pts-core: Add result-file-stats sub-command to show more test result statistics
+pts-core: Show geometric mean and harmonic mean data at end of benchmarking process when relevant as part of post-run stats
+pts-core: Improved formatting of file download text user interface for downloading of dependencies on Microsoft Windows
+pts-core: Fix Loop 'Test i of n' Reporting
+pts-core: A few warning fixes for PHP 7.3+
+pts-core: External dependency handling support for OpenMandriva Lx 4.0 (transitioned from urpmi to DNF)
+phodevi: Report Windows Subsystem for Linux (WSL) to the system layer string
+
+Phoronix Test Suite 8.6.0 Milestone 1
+7 January 2019
+
+pts-core: No longer clear test profile identifiers on secondary saved results
+pts-core: Add compare-results-to-baseline sub-command for comparing one result file (baseline) against a set of results for text look at relative perf
+pts-core: Minor fixes
+pts-core: Show wins and losses summary after testing on large result files
+pts-core: On two-way result files, after test completion show comparison of current result against previous result (baseline)
+pts-core: Add ShowPostRunStatistics user configuration XML option to toggle whether various test statistics are printed at the end of testing
+pts-core: Add recently-added-tests sub-command to show newly added test profiles / alternative to openbenchmarking-changes/recently-updated-tests
+pts-core: Allow outputting line graphs to terminal interface as basic box plot graphs
+phodevi: Improve Linux multiple network device reporting
+phodevi: LXQt desktop version reporting
+phodevi: Update for Microsoft Windows Server 2019
+system_monitor: Allow outputting system monitor graphs to terminal interface inline
+
 Phoronix Test Suite 8.4.1-Skiptvet
 9 December 2018
 
