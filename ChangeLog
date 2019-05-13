@@ -1,5 +1,59 @@
 PHORONIX TEST SUITE CHANGE-LOG
 
+Phoronix Test Suite 8.8.0-Hvaler
+13 May 2019
+
+pts-core: Report on the POWER SMT setting in notes
+pts-core: Add new/updated suite reporting
+pts-core: In build-suite allow not binding test profile versions
+pts-core: For list-suites, only show suites that have been updated within the past four years
+pts_Graph: Report N on horizontal bar graphs
+phodevi: Intel Node Manager power_meter support for sys.power sensor
+
+Phoronix Test Suite 8.8.0 Milestone 3
+9 May 2019
+
+pts-core: Add experimental dynamic-result-viewer
+pts-core: Allow marking of test profile download files as optional
+pts-core: Add "everything" virtual suite
+pts-core: Set MESA_VK_WSI_PRESENT_MODE=immediate by default to work around possible 60 FPS RADV bug
+pts-core: Rename remove-from-result-file to remove-run-from-result-file
+pts-core: Add remove-results-from-result-file sub-command
+phodevi: Detect AVX-512 VNNI
+phodevi: Fix OpenJDK Java version detection
+phodevi: Expand memory temperature sensor to work for some ARM SBCs
+phodevi: Multi-monitor detection improvements
+phodevi: Add support for gpu.memory-usage sensor with new AMDGPU mem_busy_percent sysfs interface
+system_monitor: Add PERFORMANCE_PER_SENSOR= support for performance-per-(arbitrary sensor) rather than just supporting perf-per-Watt
+ob_auto_compare: Show other results in result file on box plot
+
+Phoronix Test Suite 8.8.0 Milestone 2
+27 March 2019
+
+pts-core: On new installs set 3.00% as deviation for increasing dynamic run count rather than 3.50%
+pts-core: Add FORCE_MIN_TIMES_TO_RUN_CUTOFF= environment variable to toggle cutoff for FORCE_MIN_TIMES_TO_RUN behavior
+pts-core: Add FORCE_TIMES_TO_RUN_MULTIPLE
+pts-core: Add strict-benchmark option for enabling various options to ensure stricter behavior about the number of times to run each benchmark
+pts-core: Add cpu-physical-threads / cpu-threads / auto-executable auto test run options
+phodevi: CPU-therm reporting via sysfs for CPU core temp
+phodevi: GPU-therm reporting via sysfs for GPU core temp
+
+Phoronix Test Suite 8.8.0 Milestone 1
+16 March 2019
+
+pts-core: Allow FORCE_TIMES_TO_RUN to override debug-run/debug-benchmark single run behavior
+pts-core: Various fallbacks/workarounds for those wanting to (unofficially) use PTS on Windows 8.1
+pts-core: Other small tweaks and optimizations
+pts-core: Fixes an odd scenario where on Windows after 2 runs, further runs of that test profile for current run could fail in select (random) instances
+pts-core: Write out system notes for each system when generating PDF result output
+pts-core: CSV output improvements
+pts-core: Add result-file-raw-to-csv for dumping the raw/individual benchmark result run data
+pts_Graph: Condensing improvements for large graphs
+pts_Graph: Various formatting improvements
+phodevi: Intel GPU reporting improvements
+phodevi: BIOS version reporting support extended to Windows
+phodevi: ipmitool DMCI power sensor reporting for at least some POWER servers
+
 Phoronix Test Suite 8.6.1-Spydeberg
 21 February 2019
 
